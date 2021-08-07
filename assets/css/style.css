@@ -1,0 +1,126 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: #d6d6d6;
+}
+
+a {
+	color: #d6d6d6;
+	text-decoration: none;
+}
+
+p {
+	font-size: 16px;
+}
+
+header {
+	display: flex;
+	padding: 20px;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+	background-color: #10310d;
+	color: #d6d6d6;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 38px;
+}
+
+header nav {
+	padding-top: 15px;
+	margin-right: 20px;
+	float: right;
+	font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+	font-size: 20px;
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin-left: 20px
+}
+
+header li:hover {
+    text-decoration-line: underline;
+    color: antiquewhite;
+}
+
+main div.code img {
+	height: 395px;
+	width: 100%;
+	object-fit: cover;
+    align-items: flex-start;
+    position: absolute;
+    order: +1;
+    border-bottom: 5px solid black;
+}
+
+main section.summary {
+    padding: 20px;
+}
+
+main section.summary h2{
+    display: block;
+    padding-top: 450px;
+    text-decoration-line: underline;
+    padding-bottom: 30px;
+}
+
+main section.summary p{
+    padding: 10px;
+    font-size: 18px;
+}
+
+p.line {
+    padding: 50px;
+    border-bottom: 3px solid #a0dbe0;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+}
+
+main section.Examples {
+    padding: 70px;
+    border: 3px solid black;
+    display: flexbox;
+}
+
+main section.Examples h2 {
+    text-decoration-line: underline;
+    text-align: center;
+}
+
+main section.Examples nav {
+    display: flexbox;
+    flex-flow: row wrap;
+    text-align: center;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+#app1 {
+    object-fit: cover;
+    height: 350px;
+    width: 100%;
+}
+
+#app2 {
+    object-fit: cover;
+    height: 220px;
+    width: 50%;
+}
+
+#app3 {
+    object-fit: cover;
+    height: 220px;
+    width: 50%;
+}
