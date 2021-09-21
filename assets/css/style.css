@@ -8,7 +8,7 @@ body {
 	background-color: #d6d6d6;
 }
 
-a {
+nav a {
 	color: #d6d6d6;
 	text-decoration: none;
 }
@@ -89,9 +89,7 @@ p.line {
 }
 
 main section.Examples {
-    padding: 70px;
     border: 3px solid black;
-    display: flexbox;
 }
 
 main section.Examples h2 {
@@ -100,27 +98,157 @@ main section.Examples h2 {
 }
 
 main section.Examples nav {
-    display: flexbox;
-    flex-flow: row wrap;
-    text-align: center;
     align-items: baseline;
     justify-content: space-between;
 }
 
-#app1 {
-    object-fit: cover;
-    height: 350px;
+.global{
+    background-color: #a0dbe0;
+}
+
+.Repo{
+    position: relative;
+    top: 75px;
+    left: 0px;
+    background-color: black;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+    padding-right: 30px;
+}
+
+.Name{
+    position: relative;
+    bottom: 75px;
+    left: 0px;
+    background-color: black;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 50px;
+    padding-right: 30px;
+}
+
+.Applications{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.Pizza{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.Primary-App{
+    left: 100px;
+    border: solid black 3px;
+    order: -1;
+    position: center;
+}
+
+.Secondary-Apps{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 50%;
+}
+
+.Thirdly-Apps{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 50%;
+}
+
+#app1{
     width: 100%;
 }
 
-#app2 {
-    object-fit: cover;
-    height: 220px;
-    width: 50%;
+#app2,
+#app3,
+#app4,
+#app5{
+    height: 300px;
+    width: 100%;
 }
 
-#app3 {
-    object-fit: cover;
-    height: 220px;
-    width: 50%;
+#Contact-Me{
+    padding: 50px;
+}
+
+.Move{
+    bottom: 300px;
+}
+
+@media screen and (max-width: 1000px) {
+    header {
+        background-color: rgb(150, 219, 216);
+        color: black;
+    }
+    
+    nav {
+        background-color: rgb(150, 219, 216);
+    }
+
+    a {
+        color: black;
+    }
+
+    .Secondary-Apps{
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .Thirdly-Apps{
+        display: flex;
+        position: relative;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #app2,
+    #app3,
+    #app4,
+    #app5{
+    width: 100%;
+    }
+
+    .Move{
+        bottom: 0px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        background-color: rgb(250, 250, 123);
+        color: black;
+    }
+    nav {
+        background-color: rgb(250, 250, 123);
+    }    
+    a {
+        color: black;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    header {
+        background-color:  rgb(195, 89, 195);
+        color: brown;
+        min-width: 517px;
+    }
+    nav { 
+        background-color: rgb(195, 89, 195);
+    }
+    a {
+        color: brown;
+    }
 }
